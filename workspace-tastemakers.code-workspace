@@ -4,5 +4,21 @@
       "path": "."
     }
   ],
-  "settings": {}
+  "settings": {
+    "editor.tabSize": 2,
+    "editor.wordWrap": "on",
+    "editor.accessibilitySupport": "off",
+    "eslint.autoFixOnSave": true,
+    "eslint.alwaysShowStatus": true,
+    "eslint.packageManager": "yarn",
+    "eslint.run": "onSave",
+    "loremWhatever.defaultLorem": "Faust",
+    "prettier.eslintIntegration": true,
+    "prettier.jsxSingleQuote": true,
+    "prettier.semi": false,
+    "prettier.singleQuote": true,
+    "prettier.trailingComma": "es5",
+    "prettier.tslintIntegration": true,
+    "tinypng.apiKey": "c3ls0FbBGRp20YLFV4jpHwqF0fhK4fLJ"
+  }
 }

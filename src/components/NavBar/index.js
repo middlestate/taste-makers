@@ -55,13 +55,13 @@ const NavBar = ({ toggleNavbar, isActive }) => (
             </Link>
             <a
               href='#donate'
-              className='button is-medium is-rounded is-tm-mustard has-text-white'
+              className='button  is-rounded is-tm-mustard has-text-white'
               style={{ marginTop: 5, marginRight: 10 }}>
               DONATE
             </a>
             <a
               href='#sponsor'
-              className='button is-medium is-rounded is-tm-mustard has-text-white'
+              className='button  is-rounded is-tm-mustard has-text-white'
               style={{ marginTop: 5 }}>
               BECOME A SPONSER
             </a>

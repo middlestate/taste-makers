@@ -22,29 +22,33 @@ const HomePageTemplate = ({
       <title>{meta_title}</title>
       <meta name='description' content={meta_description} />
     </Helmet>
-    <section className='hero has-section-padding-none is-fullheight-with-navbar is-fullheight'>
+    <section className='hero is-fullheight-with-navbar is-fullheight'>
       <div className='hero-body'>
         <div className='container'>
-          <div className='columns is-centered'>
+          <div className='columns is-mobile is-centered is-gapless '>
             <div className='column is-half'>
-              <div className='section'>
+              <figure className='image is-center' style={{ width: 320 }}>
                 <img src={heading_logo} />
-                <h1 className='title is-size-1 has-text-white'>{heading}</h1>
-                <h5 className='subtitle is-size-3 has-text-white has-text-centered'>
-                  {subheading}
-                </h5>
-                <div
-                  className='is-tm-mustard has-text-white has-text-centered'
-                  style={{
-                    width: 449,
-                    height: 135,
-                    border: 1,
-                    borderColor: '#707070',
-                    borderRadius: '65px 65px 65px 65px',
-                  }}>
-                  <p className='is-size-1'>{event.date}</p>
-                  <p className='is-size-4'>{event.text}</p>
-                </div>
+              </figure>
+
+              <h1 className='title is-size-3 has-text-white is-centered'>{heading}</h1>
+
+              <h5 className='subtitle is-size-3 has-text-white has-text-centered'>
+                {subheading}
+              </h5>
+
+              <div
+                className='is-tm-mustard has-text-white has-text-centered'
+                style={{
+                  width: '50%',
+                  minWidth: 350,
+                  // height: 135,
+                  border: 1,
+                  borderColor: '#707070',
+                  borderRadius: '65px 65px 65px 65px',
+                }}>
+                <p className='is-size-3' >{event.date}</p>
+                <p className='is-size-7'>{event.text}</p>
               </div>
             </div>
           </div>
@@ -56,23 +60,38 @@ const HomePageTemplate = ({
     </section>
     {/* Raising Money */}
     <section
-      className='section is-paddingless is-tm-yellow'
+      className='section is-tm-yellow has-text-white'
       style={{ padding: 0 }}>
-      <figure className='is-5by3 is-rounded'>
-        <img
-          className='image'
-          src={raising_money.image}
-          alt='David Pacheco Tropa Magica'
-        />
-      </figure>
-      <h1 className='is-size-3'>{raising_money.heading}</h1>
-      <p className='has-text-bold is-size-5'>{raising_money.text}</p>
+      <div className='tile is-ancestor'>
+        <div className='tile is-8 is-parent'>
+          <div className='is-child'>
+            <figure className='is-square is-rounded' style={{ paddingTop: 20, paddingBottom: 50, paddingLeft: 20 }}>
+              <img
+                className='image'
+                src={raising_money.image}
+                alt='David Pacheco Tropa Magica'
+              />
+            </figure>
+          </div>
+        </div>
+        <div className='tile is-parent is-vertical' style={{ paddingTop: 50 }}>
+          <div className='tile is-child is-7'>
+            <h1 className='is-size-2 has-text-left'>{raising_money.heading}</h1>
+          </div>
+          <div className='tile is-child is-7'>
+            <p className='has-text-bold is-size-5'>{raising_money.text}</p>
+          </div>
+        </div>
+      </div>
+
     </section>
     {/* Foundation */}
-    <section className='section is-tm-yellow'>
-      <figure className='is-5by3'>
-        <img src={foundation.background} />
-      </figure>
+    <section className='section is-tm-yellow is-paddingless'>
+      <div style={{ height: '100%', width: '115vw', borderTopLeftRadius: '50%', borderTopRightRadius: '50%', marginLeft: -50, overflow: 'hidden' }}>
+        <figure className='is-5by3'>
+          <img style={{ borderTopRightRadius: '100% 0% 0%' }} src={foundation.background} />
+        </figure>
+      </div>
       <div className='columns is-centered'>
         <div className='column'>
           <h1 className='is-size-3 has-text-weight-bold has-text-centered has-text-black'>
