@@ -1,10 +1,10 @@
-const _ = require('lodash');
-const path = require('path');
-const { createFilePath } = require('gatsby-source-filesystem');
-const createPaginatedPages = require('gatsby-paginate');
+const _ = require('lodash')
+const path = require('path')
+const { createFilePath } = require('gatsby-source-filesystem')
+// const createPaginatedPages = require('gatsby-paginate')
 
 exports.createPages = ({ actions, graphql }) => {
-  const { createPage } = actions;
+  const { createPage } = actions
 
   return graphql(`
     {
@@ -33,11 +33,11 @@ exports.createPages = ({ actions, graphql }) => {
     }
   `).then(result => {
     if (result.errors) {
-      result.errors.forEach(e => console.error(e.toString()));
-      return Promise.reject(result.errors);
+      result.errors.forEach(e => console.error(e.toString()))
+      return Promise.reject(result.errors)
     }
 
-    const postsAndPages = result.data.allMarkdownRemark.edges;
+    const postsAndPages = result.data.allMarkdownRemark.edges
 
     // // Post pages:
     // let posts = [];
@@ -57,7 +57,7 @@ exports.createPages = ({ actions, graphql }) => {
     //   context: {} // This is optional and defaults to an empty object if not used
     // });
     postsAndPages.forEach(edge => {
-      const id = edge.node.id;
+      const id = edge.node.id
       createPage({
         path: edge.node.fields.title,
         tags: edge.node.frontmatter.tags,
@@ -66,10 +66,10 @@ exports.createPages = ({ actions, graphql }) => {
         ),
         // additional data can be passed via context
         context: {
-          id
-        }
-      });
-    });
+          id,
+        },
+      })
+    })
 
     // Tag pages:
     // let tags = [];
@@ -94,18 +94,18 @@ exports.createPages = ({ actions, graphql }) => {
     //     }
     //   });
     // });
-  });
-};
+  })
+}
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
-  const { createNodeField } = actions;
+  const { createNodeField } = actions
 
   if (node.internal.type === `MarkdownRemark`) {
-    const value = createFilePath({ node, getNode });
+    const value = createFilePath({ node, getNode })
     createNodeField({
       name: `title`,
       node,
-      value
-    });
+      value,
+    })
   }
-};
+}

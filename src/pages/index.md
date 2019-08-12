@@ -19,7 +19,7 @@ raising_money:
     It’s the convergence of our area’s creative community to celebrate and raise money for
     the SNV Foundation.
 foundation:
-  background: /img/Tastemakers2018-KevinChavez-215.png
+  background: /img/Tastemakers2018-KevinChavez-227.png
   heading: A FOUNDATION DEDICATED TO CULTURE & CREATIVITY
   text: >
     Sound N Vision Foundation exists to create and promote culturally diverse creative events
@@ -28,7 +28,7 @@ foundation:
     endeavor. Affordable concerts that showcase local and global talent, art and design
     exhibitions that stimulate conversation and provoke thought.
 craft:
-  image: /img/
+  image: /img/Tastemakers2018-CatalinoAlvarezJr-022.png
   heading: COME FOR THE MUSIC STAY FOR THE CRAFT
   text: >
     Tastemakers is a music festival for all the senses. While there will be plenty to see and

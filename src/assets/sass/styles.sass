@@ -1,6 +1,6 @@
 $navbar-height: 1rem
 $navbar-item-img-max-height: 2.5rem
-
+$footer-background-color: hsla(36, 95%, 57%, 1)
 @import '~bulma'
 
 $tm-yellow: hsla(36, 95%, 57%, 1)
@@ -37,8 +37,12 @@ $light-blue-er: hsla(196, 86%, 60%, 1)
 .hero-image
   background-size: cover
   left: auto
-  position: relative
+  position: absolute
   top: auto
   transform: none
   width: 100vw
   z-index: -100
+
+nav
+  position: absolute
+  top: -10px

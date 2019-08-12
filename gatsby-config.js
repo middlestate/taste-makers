@@ -1,6 +1,6 @@
-const config = require('./config');
+const config = require('./config')
 
-const pathPrefix = config.pathPrefix === '/' ? '' : config.pathPrefix;
+const pathPrefix = config.pathPrefix === '/' ? '' : config.pathPrefix
 
 module.exports = {
   siteMetadata: {
@@ -13,8 +13,8 @@ module.exports = {
       description: config.siteDescription,
       image_url: `${config.siteUrl + pathPrefix}/icons/icon-512x512.png`,
       author: config.userName,
-      copyright: config.copyright
-    }
+      copyright: config.copyright,
+    },
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -23,34 +23,34 @@ module.exports = {
       resolve: 'gatsby-plugin-react-svg',
       options: {
         rule: {
-          include: `/src/assets/img/`
-        }
-      }
+          include: `/src/assets/img/`,
+        },
+      },
     },
     {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/src/assets/img`,
-        name: 'uploads'
-      }
+        name: 'uploads',
+      },
     },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/src/pages`,
-        name: 'pages'
-      }
+        name: 'pages',
+      },
     },
     {
-      resolve: `gatsby-plugin-sitemap`
+      resolve: `gatsby-plugin-sitemap`,
     },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/src/assets/img`,
-        name: 'images'
-      }
+        name: 'images',
+      },
     },
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
@@ -61,8 +61,8 @@ module.exports = {
           {
             resolve: 'gatsby-remark-relative-images',
             options: {
-              name: 'uploads'
-            }
+              name: 'uploads',
+            },
           },
           {
             resolve: 'gatsby-remark-images',
@@ -70,33 +70,33 @@ module.exports = {
               // It's important to specify the maxWidth (in pixels) of
               // the content container as this plugin uses this as the
               // base for generating different widths of each image.
-              maxWidth: 2048
-            }
-          }
-        ]
-      }
+              maxWidth: 2048,
+            },
+          },
+        ],
+      },
     },
     {
       resolve: 'gatsby-plugin-netlify-cms',
       options: {
         modulePath: `${__dirname}/src/cms/cms.js`,
         enableIdentityWidget: true,
-        htmlTitle: `Gatsby Starter EA Content Manager`
-      }
+        htmlTitle: `Gatsby Starter EA Content Manager`,
+      },
     },
     {
       resolve: `gatsby-plugin-nprogress`,
       options: {
         color: config.themeColor,
-        showSpinner: false
-      }
+        showSpinner: false,
+      },
     },
     {
       resolve: `gatsby-plugin-google-tagmanager`,
       options: {
         id: config.googleTagManagerID,
-        includeInDevelopment: false
-      }
+        includeInDevelopment: false,
+      },
     },
     {
       resolve: `gatsby-plugin-manifest`,
@@ -111,25 +111,25 @@ module.exports = {
           {
             src: `/icons/icon-192x192.png`,
             sizes: `192x192`,
-            type: `image/png`
+            type: `image/png`,
           },
           {
             src: `/icons/icon-512x512.png`,
             sizes: `512x512`,
-            type: `image/png`
-          }
-        ]
-      }
+            type: `image/png`,
+          },
+        ],
+      },
     },
     `gatsby-plugin-offline`,
     {
       resolve: 'gatsby-plugin-feed',
       options: {
-        setup(ref) {
-          const ret = ref.query.site.siteMetadata.rssMetadata;
-          ret.allMarkdownRemark = ref.query.allMarkdownRemark;
-          ret.generator = config.siteTitle;
-          return ret;
+        setup (ref) {
+          const ret = ref.query.site.siteMetadata.rssMetadata
+          ret.allMarkdownRemark = ref.query.allMarkdownRemark
+          ret.generator = config.siteTitle
+          return ret
         },
         query: `
                 {
@@ -149,8 +149,8 @@ module.exports = {
               `,
         feeds: [
           {
-            serialize(ctx) {
-              const rssMetadata = ctx.query.site.siteMetadata.rssMetadata;
+            serialize (ctx) {
+              const rssMetadata = ctx.query.site.siteMetadata.rssMetadata
               return ctx.query.allMarkdownRemark.edges
                 .filter(
                   edge => edge.node.frontmatter.templateKey === 'product-page'
@@ -161,8 +161,8 @@ module.exports = {
                   description: edge.node.excerpt,
                   url: rssMetadata.site_url + edge.node.fields.slug,
                   guid: rssMetadata.site_url + edge.node.fields.slug,
-                  custom_elements: [{ 'content:encoded': edge.node.html }]
-                }));
+                  custom_elements: [{ 'content:encoded': edge.node.html }],
+                }))
             },
             query: `
                     {
@@ -185,10 +185,10 @@ module.exports = {
                       }
                     }
                   `,
-            output: config.siteRss
-          }
-        ]
-      }
+            output: config.siteRss,
+          },
+        ],
+      },
     },
     {
       resolve: `@gatsby-contrib/gatsby-plugin-elasticlunr-search`,
@@ -199,13 +199,13 @@ module.exports = {
         resolvers: {
           // For any node of type MarkdownRemark, list how to resolve the fields` values
           MarkdownRemark: {
-            title: node => node.frontmatter.title
+            title: node => node.frontmatter.title,
             // tags: node => node.frontmatter.tags,
             // slug: node => node.fields.slug
-          }
-        }
-      }
+          },
+        },
+      },
     },
-    `gatsby-plugin-netlify`
-  ]
-};
+    `gatsby-plugin-netlify`,
+  ],
+}

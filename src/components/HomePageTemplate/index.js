@@ -1,7 +1,7 @@
-import React, { Fragment } from 'react';
-import Helmet from 'react-helmet';
-import { Link } from 'gatsby';
-import PropTypes from 'prop-types';
+import React, { Fragment } from 'react'
+import Helmet from 'react-helmet'
+import { Link } from 'gatsby'
+import PropTypes from 'prop-types'
 
 const HomePageTemplate = ({
   meta_title,
@@ -15,83 +15,94 @@ const HomePageTemplate = ({
   raising_money,
   foundation,
   craft,
-  bottom_hero
+  bottom_hero,
 }) => (
   <Fragment>
     <Helmet>
       <title>{meta_title}</title>
-      <meta name="description" content={meta_description} />
+      <meta name='description' content={meta_description} />
     </Helmet>
-    <section className="hero has-section-padding-none">
-      <div className="hero-image">
-        <img src={title_hero} />
-      </div>
-      <div className="hero-body">
-        <div className="container">
-          <div className="columns ">
-            <div className="column is-4 is-offset-2">
-              <div className="section">
+    <section className='hero has-section-padding-none is-fullheight-with-navbar is-fullheight'>
+      <div className='hero-body'>
+        <div className='container'>
+          <div className='columns is-centered'>
+            <div className='column is-half'>
+              <div className='section'>
                 <img src={heading_logo} />
-                <h1 className="title is-size-3">{heading}</h1>
-                <h5 className="subtitle is-size-7">{subheading}</h5>
+                <h1 className='title is-size-1 has-text-white'>{heading}</h1>
+                <h5 className='subtitle is-size-3 has-text-white has-text-centered'>
+                  {subheading}
+                </h5>
                 <div
-                  className="is-tm-mustard is-rounded"
-                  style={{ width: 449, height: 135 }}>
-                  <p>{event.date}</p>
-                  <p>{event.text}</p>
+                  className='is-tm-mustard has-text-white has-text-centered'
+                  style={{
+                    width: 449,
+                    height: 135,
+                    border: 1,
+                    borderColor: '#707070',
+                    borderRadius: '65px 65px 65px 65px',
+                  }}>
+                  <p className='is-size-1'>{event.date}</p>
+                  <p className='is-size-4'>{event.text}</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <div className='hero-image'>
+        <img src={title_hero} />
+      </div>
     </section>
     {/* Raising Money */}
     <section
-      className="section is-paddingless is-tm-yellow"
+      className='section is-paddingless is-tm-yellow'
       style={{ padding: 0 }}>
-      <figure className="is-5by3 is-rounded">
+      <figure className='is-5by3 is-rounded'>
         <img
-          className="image"
+          className='image'
           src={raising_money.image}
-          alt="David Pacheco Tropa Magica"
+          alt='David Pacheco Tropa Magica'
         />
       </figure>
-      <h1 className="is-size-3">{raising_money.heading}</h1>
-      <p className="has-text-bold is-size-5">{raising_money.text}</p>
+      <h1 className='is-size-3'>{raising_money.heading}</h1>
+      <p className='has-text-bold is-size-5'>{raising_money.text}</p>
     </section>
     {/* Foundation */}
-    <section className="section is-tm-yellow">
-      <div className="columns is-centered">
-        <div className="column">
-          <h1 className="is-size-3 has-text-weight-bold has-text-centered has-text-black">
+    <section className='section is-tm-yellow'>
+      <figure className='is-5by3'>
+        <img src={foundation.background} />
+      </figure>
+      <div className='columns is-centered'>
+        <div className='column'>
+          <h1 className='is-size-3 has-text-weight-bold has-text-centered has-text-black'>
             {foundation.heading}
           </h1>
-          <p className="has-text-bold is-size-5">{foundation.text}</p>
+          <p className='has-text-bold is-size-5'>{foundation.text}</p>
         </div>
       </div>
     </section>
     {/* Craft */}
     <section>
-      <figure className="is-5by3">
+      <figure className='is-5by3'>
         <img src={craft.image} />
       </figure>
-      <h1 className="is-size-3 has-text-bold">{craft.heading}</h1>
-      <p className="is-size-5 has-text-bold">{craft.text}</p>
+      <h1 className='is-size-3 has-text-bold'>{craft.heading}</h1>
+      <p className='is-size-5 has-text-bold'>{craft.text}</p>
     </section>
     {/* bottom-hero */}
-    <section className="hero">
-      <div className="hero-image">
+    <section className='hero'>
+      <div className='hero-image'>
         <img src={bottom_hero.image} />
       </div>
-      <div className="columns is centered">
-        <div className="column is-half">
-          <h1 className="is-size-3">{bottom_hero.heading}</h1>
+      <div className='columns is centered'>
+        <div className='column is-half'>
+          <h1 className='is-size-3'>{bottom_hero.heading}</h1>
         </div>
       </div>
     </section>
   </Fragment>
-);
+)
 
 HomePageTemplate.propTypes = {
   title: PropTypes.string,
@@ -103,27 +114,27 @@ HomePageTemplate.propTypes = {
   subheading: PropTypes.string,
   event: PropTypes.shape({
     date: PropTypes.string,
-    text: PropTypes.string
+    text: PropTypes.string,
   }),
   raising_money: PropTypes.shape({
     image: PropTypes.string,
     heading: PropTypes.string,
-    text: PropTypes.string
+    text: PropTypes.string,
   }),
   foundation: PropTypes.shape({
     background: PropTypes.string,
     heading: PropTypes.string,
-    text: PropTypes.string
+    text: PropTypes.string,
   }),
   craft: PropTypes.shape({
     image: PropTypes.string,
     heading: PropTypes.string,
-    text: PropTypes.string
+    text: PropTypes.string,
   }),
   bottom_hero: PropTypes.shape({
     image: PropTypes.string,
-    heading: PropTypes.string
-  })
-};
+    heading: PropTypes.string,
+  }),
+}
 
-export default HomePageTemplate;
+export default HomePageTemplate

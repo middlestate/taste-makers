@@ -1,6 +1,8 @@
-import React from 'react';
-import { Link, graphql, StaticQuery } from 'gatsby';
+import React from 'react'
+import { Link, graphql, StaticQuery } from 'gatsby'
 // import SearchBox from '../SearchBox'
+import Logo from '../../assets/img/snv-logo.svg'
+import Tastemaker from '../../assets/img/tastemakers-white-01.svg'
 const NavBar = ({ toggleNavbar, isActive }) => (
   <StaticQuery
     query={graphql`
@@ -11,18 +13,23 @@ const NavBar = ({ toggleNavbar, isActive }) => (
       }
     `}
     render={data => (
-      <nav className="navbar is-light-blue-er" aria-label="main navigation">
+      <nav
+        className='navbar is-light-blue-er has-text-white is-fixed-top'
+        aria-label='main navigation'>
         <div
-          className="navbar-brand is-centered"
-          style={{ flex: 1, justifyContent: 'center', marginTop: -10 }}>
-          <Link to="/" className="navbar-item">
-            <img src="/img/snv-logo.svg" alt="logo" />
-            <img src="/img/tastemaker-white-01.svg" />
+          className='navbar-brand is-centered'
+          style={{ flex: 1, justifyContent: 'center' }}>
+          <Link to='/' className='navbar-item'>
+            <figure className='image' style={{ width: 30, marginRight: 5 }}>
+              <img src={Logo} />
+            </figure>
+            <figure className='image' style={{ width: 100 }}>
+              <img src={Tastemaker} />
+            </figure>
           </Link>
           <div
             className={`navbar-burger ${isActive ? 'is-active' : ''}`}
-            style={{ padding: 10, marginRight: 10, marginTop: 5 }}
-            data-target="navMenu"
+            data-target='navMenu'
             onClick={toggleNavbar}>
             <span />
             <span />
@@ -30,31 +37,32 @@ const NavBar = ({ toggleNavbar, isActive }) => (
           </div>
         </div>
         <div
-          className={`navbar-menu ${isActive ? 'is-active' : ''}`}
-          id="navMenu">
+          className={`navbar-menu ${
+            isActive ? 'is-active is-light-blue-er' : ''
+          }`}
+          id='navMenu'>
           <div
-            className="navbar-end"
+            className='navbar-end'
             style={{ flex: 1, justifyContent: 'center' }}>
-            <Link className="navbar-item" to="/">
-              Home
+            <Link className='navbar-item has-text-white' to='/about'>
+              ABOUT
             </Link>
-            <Link className="navbar-item" to="/about">
-              Products
+            <Link className='has-text-white navbar-item' to='/artist'>
+              ARTIST
             </Link>
-            <Link className="navbar-item" to="/artist">
-              Highlights
-            </Link>
-            <Link className="navbar-item" to="/contact">
-              Contact
+            <Link className='has-text-white navbar-item' to='/contact'>
+              CONTACT
             </Link>
             <a
-              href="#donate"
-              className="button is-medium is-rounded is-tm-mustard">
+              href='#donate'
+              className='button is-medium is-rounded is-tm-mustard has-text-white'
+              style={{ marginTop: 5, marginRight: 10 }}>
               DONATE
             </a>
             <a
-              href="#sponsor"
-              className="button is-medium is-rounded is-tm-mustard">
+              href='#sponsor'
+              className='button is-medium is-rounded is-tm-mustard has-text-white'
+              style={{ marginTop: 5 }}>
               BECOME A SPONSER
             </a>
           </div>
@@ -62,6 +70,6 @@ const NavBar = ({ toggleNavbar, isActive }) => (
       </nav>
     )}
   />
-);
+)
 
-export default NavBar;
+export default NavBar
