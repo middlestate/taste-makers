@@ -22,68 +22,70 @@ const HomePageTemplate = ({
       <title>{meta_title}</title>
       <meta name='description' content={meta_description} />
     </Helmet>
-    <section className='hero is-fullheight-with-navbar is-fullheight'>
-      <div className='hero-body'>
-        <div className='container'>
-          <div className='columns is-mobile is-centered is-gapless '>
-            <div className='column is-half'>
-              <figure className='image is-center' style={{ width: 320 }}>
-                <img src={heading_logo} />
-              </figure>
+    <section className='hero is-fullheight-with-navbar'>
+      <div className=''>
+        <img className='hero-image' src={title_hero} />
 
-              <h1 className='title is-size-3 has-text-white is-centered'>{heading}</h1>
+        <div className='hero-body'>
 
-              <h5 className='subtitle is-size-3 has-text-white has-text-centered'>
-                {subheading}
-              </h5>
-
-              <div
-                className='is-tm-mustard has-text-white has-text-centered'
-                style={{
-                  width: '50%',
-                  minWidth: 350,
-                  // height: 135,
-                  border: 1,
-                  borderColor: '#707070',
-                  borderRadius: '65px 65px 65px 65px',
-                }}>
-                <p className='is-size-3' >{event.date}</p>
-                <p className='is-size-7'>{event.text}</p>
+          <div className='container has-text-centered'>
+            <div className='columns is-mobile is-centered is-gapless '>
+              <div className='column is-half'>
+                <figure className='image is-center' style={{ width: 320 }}>
+                  <img src={heading_logo} />
+                </figure>
+                <h1 className='title is-size-1 has-text-white is-centered'>{heading}</h1>
+                <h5 className='subtitle is-size-4 has-text-white has-text-centered'>
+                  {subheading}
+                </h5>
+                <div
+                  className='is-tm-mustard has-text-white has-text-centered'
+                  style={{
+                    width: '50%',
+                    minWidth: 350,
+                    // height: 135,
+                    border: 1,
+                    borderColor: '#707070',
+                    borderRadius: '65px 65px 65px 65px',
+                  }}>
+                  <p className='is-size-3' >{event.date}</p>
+                  <p className='is-size-7'>{event.text}</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className='hero-image'>
-        <img src={title_hero} />
-      </div>
     </section>
     {/* Raising Money */}
     <section
       className='section is-tm-yellow has-text-white'
-      style={{ padding: 0 }}>
-      <div className='tile is-ancestor'>
-        <div className='tile is-8 is-parent'>
-          <div className='is-child'>
-            <figure className='is-square is-rounded' style={{ paddingTop: 20, paddingBottom: 50, paddingLeft: 20 }}>
-              <img
-                className='image'
-                src={raising_money.image}
-                alt='David Pacheco Tropa Magica'
-              />
-            </figure>
-          </div>
-        </div>
-        <div className='tile is-parent is-vertical' style={{ paddingTop: 50 }}>
-          <div className='tile is-child is-7'>
-            <h1 className='is-size-2 has-text-left'>{raising_money.heading}</h1>
-          </div>
-          <div className='tile is-child is-7'>
-            <p className='has-text-bold is-size-5'>{raising_money.text}</p>
+      style={{ padding: 10 }}>
+      <div className='columns is-mobile is-centered'>
+        <div className='column is-10 is-offset-1'>
+          <div className='tile is-ancestor'>
+            <div className='tile is-6 is-parent'>
+              <div className='tile is-child ' style={{ backgroundColor: 'transparent' }}>
+                <figure className='is-square is-rounded' style={{ paddingTop: 20, paddingBottom: 50, paddingLeft: 20 }}>
+                  <img
+                    className='image'
+                    src={raising_money.image}
+                    alt='David Pacheco Tropa Magica'
+                  />
+                </figure>
+              </div>
+            </div>
+            <div className='tile is-parent is-vertical is-gapless  is-6' style={{ paddingTop: 50, backgroundColor: 'transparent' }}>
+              <div className='tile is-child is-6 ' style={{ backgroundColor: 'transparent' }}>
+                <h1 className='is-size-2 has-text-left has-text-white' >{raising_money.heading}</h1>
+              </div>
+              <div className='tile is-child has-text-white is-7 ' style={{ backgroundColor: 'transparent' }}>
+                <p className='has-text-bold is-size-5 '>{raising_money.text}</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-
     </section>
     {/* Foundation */}
     <section className='section is-tm-yellow is-paddingless'>

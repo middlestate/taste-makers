@@ -19,6 +19,7 @@
     "prettier.singleQuote": true,
     "prettier.trailingComma": "es5",
     "prettier.tslintIntegration": true,
-    "tinypng.apiKey": "c3ls0FbBGRp20YLFV4jpHwqF0fhK4fLJ"
+    "tinypng.apiKey": "c3ls0FbBGRp20YLFV4jpHwqF0fhK4fLJ",
+    "sass.format.enabled": true
   }
 }
