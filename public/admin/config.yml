@@ -26,7 +26,7 @@ collections:
           - {label: Raising Money, name: raising_money, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Heading, name: heading, widget: string}, {label: Text, name: text, widget: text}]}
           - {label: Foundation, name: foundation, widget: object, fileds:[{label: Background Image, name: background, widget: image},{label: Heading, name: heading, widget: string}, {label: Text, name: text, widget: text}]}
           - {label: Craft, name: craft, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Heading, name: heading, widget: string}, {label: Text, name: text, widget: text}]}
-          - {label: 'Bottom Hero', name: buttom_hero, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Header, name: header, widget: string}]}
+          - {label: 'Bottom Hero', name: buttom_hero, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Heading, name: heading, widget: string}]}
           - {label: "Meta Title", name: meta_title, widget: string}
           - {label: "Meta Description", name: meta_description, widget: text}
       - file: "src/pages/contact/index.md"
