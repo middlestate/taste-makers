@@ -1,7 +1,7 @@
 ---
 templateKey: home-page
 title: Tastemakers
-title_hero: /img/Tastemakers2018-CatalinoAlvarezJr-014@2x.png
+title_hero: /img/Tastemakers2018-CatalinoAlvarezJr-014.png
 heading_logo: /img/tastemakers-yellow-otl-01.svg
 heading: MUSIC + ART + YOUTH
 subheading: Annual live music festival in support of the SNV Foundation
@@ -34,6 +34,6 @@ craft:
     Tastemakers is a music festival for all the senses. While there will be plenty to see and
     hear on the stage, our local food and beer crafters will give you plenty to taste and smell.
 bottom_hero:
-  image: /img/Tastemakers2018-KevinChavez-215@2x.png
+  image: /img/Tastemakers2018-KevinChavez-215.png
   heading: 2019 LINEUP TO BE ANNOUNCED AUGUST 25
 ---

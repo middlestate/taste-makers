@@ -1,4 +1,4 @@
-Obackend:
+backend:
   name: git-gateway
   # test-repo
   # git-gateway
