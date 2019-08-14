@@ -4,7 +4,7 @@ import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import RaisingMoney from './RaisingMoney'
 import Foundation from './Foundation'
-import Craft from './Craft'
+import Craft from '../Craft'
 import BottomHero from './BottomHero'
 
 const HomePageTemplate = ({
