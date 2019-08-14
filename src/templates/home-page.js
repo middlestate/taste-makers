@@ -60,7 +60,7 @@ export const pageQuery = graphql`
           text
         }
         foundation {
-          background
+          image
           heading
           text
         }

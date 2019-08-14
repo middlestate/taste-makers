@@ -19,7 +19,7 @@ raising_money:
     It’s the convergence of our area’s creative community to celebrate and raise money for
     the SNV Foundation.
 foundation:
-  background: /img/Tastemakers2018-KevinChavez-227.png
+  image: /img/Tastemakers2018-KevinChavez-227.png
   heading: A FOUNDATION DEDICATED TO CULTURE & CREATIVITY
   text: >
     Sound N Vision Foundation exists to create and promote culturally diverse creative events
