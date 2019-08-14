@@ -5,13 +5,10 @@ const BottomHero = ({
   image,
   heading,
 }) => (
-  <section className='hero'>
-    <div className='hero-image'>
-      <img src={image} />
-    </div>
-    <div className='columns is centered'>
-      <div className='column is-half'>
-        <h1 className='is-size-3'>{heading}</h1>
+  <section className='section is-marginless is-paddingless'>
+    <div className='hero is-fullheight' style={{ backgroundImage: `url(${image})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center center' }}>
+      <div className='hero-body'>
+        <h1 className='is-size-3 has-text-centered has-text-white'>{heading}</h1>
       </div>
     </div>
   </section>
