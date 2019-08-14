@@ -18,10 +18,7 @@ const HomePagePreview = ({ entry, getAsset }) => {
       raising_money={entry.getIn(['data', 'raising_money'])}
       foundation={entry.getIn('data', 'foundation')}
       craft={entry.getIn(['data', 'craft'])}
-      bottom_hero={{
-        image: entry.getIn(['data', 'bottom_hero', 'image']),
-        heading: entry.getIn(['data', 'bottom_hero', 'heading']),
-      }}
+      bottom_hero={entry.getIn(['data', 'bottom_hero'])}
     />
   )
 }
