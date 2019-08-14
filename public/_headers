@@ -1,2 +1,59 @@
-/sw.js   # Gatsby's default service worker file path
-   Cache-Control: no-cache
+## Created with gatsby-plugin-netlify
+
+/*
+  X-Frame-Options: DENY
+  X-XSS-Protection: 1; mode=block
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: same-origin
+/component---node-modules-gatsby-plugin-offline-app-shell-js-cea82e17aa5607bf93f4.js
+  Cache-Control: public, max-age=31536000, immutable
+/styles.1583c3958f504ab51706.css
+  Cache-Control: public, max-age=31536000, immutable
+/styles-5640a313d4734d53d4a3.js
+  Cache-Control: public, max-age=31536000, immutable
+/1-93f521c8d8733a994379.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-templates-home-page-js-5a8cbdf5d0dda2ed6f55.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-templates-contact-page-js-6cb26b735ebe309ce093.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-404-js-5a156c0e3da7ae672aba.js
+  Cache-Control: public, max-age=31536000, immutable
+/undefined
+  Cache-Control: public, max-age=31536000, immutable
+/webpack-runtime-c830c3fb819f67653b0d.js
+  Cache-Control: public, max-age=31536000, immutable
+/app-846d971fcd6ba0c9adc6.js
+  Cache-Control: public, max-age=31536000, immutable
+/static/*
+  Cache-Control: public, max-age=31536000, immutable
+/sw.js
+  Cache-Control: no-cache
+/offline-plugin-app-shell-fallback/
+  Link: </webpack-runtime-c830c3fb819f67653b0d.js>; rel=preload; as=script
+  Link: </app-846d971fcd6ba0c9adc6.js>; rel=preload; as=script
+  Link: </component---node-modules-gatsby-plugin-offline-app-shell-js-cea82e17aa5607bf93f4.js>; rel=preload; as=script
+/
+  Link: </webpack-runtime-c830c3fb819f67653b0d.js>; rel=preload; as=script
+  Link: </app-846d971fcd6ba0c9adc6.js>; rel=preload; as=script
+  Link: </styles-5640a313d4734d53d4a3.js>; rel=preload; as=script
+  Link: </1-93f521c8d8733a994379.js>; rel=preload; as=script
+  Link: </component---src-templates-home-page-js-5a8cbdf5d0dda2ed6f55.js>; rel=preload; as=script
+/contact/
+  Link: </webpack-runtime-c830c3fb819f67653b0d.js>; rel=preload; as=script
+  Link: </app-846d971fcd6ba0c9adc6.js>; rel=preload; as=script
+  Link: </styles-5640a313d4734d53d4a3.js>; rel=preload; as=script
+  Link: </1-93f521c8d8733a994379.js>; rel=preload; as=script
+  Link: </component---src-templates-contact-page-js-6cb26b735ebe309ce093.js>; rel=preload; as=script
+/404/
+  Link: </webpack-runtime-c830c3fb819f67653b0d.js>; rel=preload; as=script
+  Link: </app-846d971fcd6ba0c9adc6.js>; rel=preload; as=script
+  Link: </styles-5640a313d4734d53d4a3.js>; rel=preload; as=script
+  Link: </1-93f521c8d8733a994379.js>; rel=preload; as=script
+  Link: </component---src-pages-404-js-5a156c0e3da7ae672aba.js>; rel=preload; as=script
+/404.html
+  Link: </webpack-runtime-c830c3fb819f67653b0d.js>; rel=preload; as=script
+  Link: </app-846d971fcd6ba0c9adc6.js>; rel=preload; as=script
+  Link: </styles-5640a313d4734d53d4a3.js>; rel=preload; as=script
+  Link: </1-93f521c8d8733a994379.js>; rel=preload; as=script
+  Link: </component---src-pages-404-js-5a156c0e3da7ae672aba.js>; rel=preload; as=script

@@ -168,7 +168,7 @@ module.exports = {
                     {
                       allMarkdownRemark(
                         limit: 1000,
-                        sort: { order: DESC, fields: [frontmatter___slug] },
+                        sort: { order: DESC, fields: [frontmatter___title] },
                       ) {
                         edges {
                           node {
