@@ -14,11 +14,29 @@ const HomePagePreview = ({ entry, getAsset }) => {
       heading={entry.getIn(['data', 'heading'])}
       heading_logo={entry.getIn(['data', 'heading_hero'])}
       subheading={entry.getIn(['data', 'subheading'])}
-      event={entry.getIn(['data', 'event'])}
-      raising_money={entry.getIn(['data', 'raising_money'])}
-      foundation={entry.getIn('data', 'foundation')}
-      craft={entry.getIn(['data', 'craft'])}
-      bottom_hero={entry.getIn(['data', 'bottom_hero'])}
+      event={{
+        date: entry.getIn(['data', 'event', 'date']),
+        text: entry.getIn(['data', 'text', 'text']),
+      }}
+      raising_money={{
+        image: entry.getIn(['data', 'raising_money', 'image']),
+        heading: entry.getIn(['data', 'heading', 'text']),
+        text: entry.getIn(['data', 'raising_money', 'text']),
+      }}
+      foundation={{
+        image: entry.getIn('data', 'foundation', 'image'),
+        heading: entry.getIn(['data', 'foundation', 'heading']),
+        text: entry.getIn(['data', 'foundation', 'text']),
+      }}
+      craft={{
+        image: entry.getIn(['data', 'craft', 'image']),
+        heading: entry.getIn(['data', 'craft', 'heading']),
+        text: entry.getIn(['data', 'craft', 'text']),
+      }}
+      bottom_hero={{
+        image: entry.getIn(['data', 'bottom_hero', 'image']),
+        heading: entry.getIn(['data', 'bottom_hero', 'heading']),
+      }}
     />
   )
 }
