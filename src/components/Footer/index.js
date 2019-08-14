@@ -7,12 +7,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const Footer = () => {
   return (
     <footer className='footer is-paddingless'>
-      <div className='section is-ea-black'>
-        <div className='columns is-centered is-mobile'>
-          <div className='column is-one-fifth-desktop is-half-mobile'>
-            <p className='has-text-weight-bold has-text-light-grey is-size-6 is-size-7-mobile has-text-centered'>
-              <u>LET'S STAY IN TOUCH</u>
-            </p>
+      <div className='section '>
+        <div className='columns is-mobile'>
+          <div className='column is-4'>
+            <ul style={{ listStyleType: 'none' }}>
+              <li className='fabs' ><FontAwesomeIcon icon={['fab', 'facebook']} size='2x' /></li>
+              <li className='fabs' ><FontAwesomeIcon icon={['fab', 'twitter']} size='2x' /></li>
+              <li className='fabs' ><FontAwesomeIcon icon={['fab', 'instagram']} size='2x' /></li>
+            </ul>
           </div>
         </div>
       </div>
