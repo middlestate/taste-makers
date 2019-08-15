@@ -33,17 +33,20 @@ const displayInfo = (artist, text) => (
   </div>
 )
 const Gallery = ({ gridItems }) => {
-  const [hoverRef, isHovered] = useHover()
+
   return (
     <div className='container'>
-      {gridItems.map(({ image, artist, text }, keys) => (
+      {gridItems.map(({ image, artist, text }, keys) =>{
+        const [hoverRef, isHovered] = useHover()
+        return (
         <div key={keys} ref={hoverRef}>
           <figure className='image' style={{height: 200, width: 200}}>
             <img style={{height: 200, width: 200, borderRadius: '50%'}} src={image} />
           </figure>
           {isHovered ? displayInfo(artist, text) : ''}
         </div>
-      ))}
+        )})
+       }
     </div>
   )
 }
