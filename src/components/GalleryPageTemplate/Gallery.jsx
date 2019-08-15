@@ -26,10 +26,10 @@ const useHover = () => {
 }
 
 const displayInfo = (artist, text) => (
-  <div className='has-text-white' style={{ height: 200, width: 300, padding: 10 }}>
+  <div className='has-text-black' style={{ float: 'right', height: 200, width: 300, padding: 10 }}>
     {/* TODO: add fancy slideout animation */}
     <h1 className='is-size-5 has-text-bold has-text-centered'>{artist}</h1>
-    <p className='is-size-3'>{text}</p>
+    <p className='is-size-7'>{text}</p>
   </div>
 )
 const Gallery = ({ gridItems }) => {
@@ -38,8 +38,8 @@ const Gallery = ({ gridItems }) => {
     <div className='container'>
       {gridItems.map(({ image, artist, text }, keys) => (
         <div key={keys} ref={hoverRef}>
-          <figure className='image is-128x128'>
-            <img className='is-rounded' src={image} />
+          <figure className='image' style={{height: 200, width: 200}}>
+            <img style={{height: 200, width: 200, borderRadius: '50%'}} src={image} />
           </figure>
           {isHovered ? displayInfo(artist, text) : ''}
         </div>
