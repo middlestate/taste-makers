@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   # test-repo
   # git-gateway
-  branch: amits-build
+  branch: taste-makers/amits-build
 
 publish_mode: editorial_workflow
 media_folder: static/img
