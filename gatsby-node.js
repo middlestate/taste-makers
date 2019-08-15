@@ -17,7 +17,7 @@ exports.createPages = ({
     {
       allMarkdownRemark(
         limit: 1000
-        sort: { order: DESC, fields: [frontmatter___slug] }
+        sort: { order: DESC, fields: [frontmatter___templateKey] }
       ) {
         edges {
           node {
