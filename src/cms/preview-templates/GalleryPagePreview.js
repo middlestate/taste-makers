@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import GalleryPageTemplate from '../../components/GalleryPageTemplate'
 
 const GalleryPagePreview = ({ entry, getAsset }) => {
-  const entryImages = entry.getIn('data', 'gallery', 'images')
+  const entryImages = entry.getIn(['data', 'gallery', 'images'])
   const images = entryImages ? entryImages.toJS() : []
 
   return (
