@@ -17,7 +17,7 @@ exports.createPages = ({ actions, graphql }) => {
             excerpt(pruneLength: 400)
             id
             fields {
-              title
+              slug
             }
             frontmatter {
               title
@@ -59,7 +59,7 @@ exports.createPages = ({ actions, graphql }) => {
     postsAndPages.forEach(edge => {
       const id = edge.node.id
       createPage({
-        path: edge.node.fields.title,
+        path: edge.node.fields.slug,
         // tags: edge.node.frontmatter.tags,
         component: path.resolve(
           `src/templates/${String(edge.node.frontmatter.templateKey)}.js`
@@ -103,7 +103,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
   if (node.internal.type === `MarkdownRemark`) {
     const value = createFilePath({ node, getNode })
     createNodeField({
-      name: `title`,
+      name: `slug`,
       node,
       value,
     })
