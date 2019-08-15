@@ -1,9 +1,10 @@
 ---
-templateKey: gallery-page
 title: Gallery
 heading: WE BELIEVE IN MUSIC
 subheading: >
-  The Tastemakers Music Festival is one night of live music, art and craft food and drink. It’s the convergence of our area’s creative community to celebrate and raise money for the SNV Foundation.
+  The Tastemakers Music Festival is one night of live music, art and craft food
+  and drink. It’s the convergence of our area’s creative community to celebrate
+  and raise money for the SNV Foundation.
 gallery:
   images:
     - artist: Steven Tyler
@@ -59,3 +60,4 @@ meta_description: >
   The Tastemakers Music Festival is one night of live music, art and craft food
   and drink.
 ---
+
