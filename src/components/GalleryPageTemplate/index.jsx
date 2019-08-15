@@ -8,7 +8,6 @@ const GalleryPageTemplate = ({
   title,
   heading,
   subheading,
-  description,
   gallery,
   craft,
   meta_title,
@@ -40,7 +39,6 @@ GalleryPageTemplate.propTypes = {
   title: PropTypes.string,
   heading: PropTypes.string,
   subheading: PropTypes.string,
-  description: PropTypes.string,
   gallery: PropTypes.shape({
     images: PropTypes.array,
   }),
