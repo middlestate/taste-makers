@@ -32,8 +32,15 @@ collections:
       - file: "src/pages/gallery/index.md" 
         label: "Gallery Page"
         name: gallery
-        
-        
+        fields:
+          - {label: "Template Key", name: templatKey, widget: hidden, default: "gallery-page"}
+          - {label: Title, name: title, widget: string}
+          - {label: Heading, name: heading, widget: string}
+          - {label: Subheading, name: subheading, widget: string}
+          - {label: Gallery, name: gallery, widget: object, fields: [{label: Images, name: images, widget: list, fields:[{label: Image, name: image, widget: string}, {label: Artist, name: artist, widget: string}, {label: Text, name: text, widget: text}]}]}
+          - {label: Craft, name: craft, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Heading, name: heading, widget: string}, {label: Text, name: text, widget: text}]}
+          - {label: "Meta Title", name: meta_title, widget: string}
+          - {label: "Meta Description", name: meta_description, widget: text}
       - file: "src/pages/contact/index.md"
         label: "Contact Page"
         name: "contact"

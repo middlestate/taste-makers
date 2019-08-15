@@ -47,7 +47,7 @@ const NavBar = ({ toggleNavbar, isActive }) => (
             <Link className='navbar-item has-text-white' to='/about'>
               ABOUT
             </Link>
-            <Link className='has-text-white navbar-item' to='/artist'>
+            <Link className='has-text-white navbar-item' to='/gallery'>
               ARTIST
             </Link>
             <Link className='has-text-white navbar-item' to='/contact'>
