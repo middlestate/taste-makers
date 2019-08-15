@@ -50,3 +50,5 @@ GalleryPageTemplate.propTypes = {
   meta_title: PropTypes.string,
   meta_description: PropTypes.string,
 }
+
+export default GalleryPageTemplate
