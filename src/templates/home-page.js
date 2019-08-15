@@ -40,6 +40,7 @@ export const pageQuery = graphql`
   query IndexPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       frontmatter {
+        templateKey
         title
         meta_title
         meta_description
