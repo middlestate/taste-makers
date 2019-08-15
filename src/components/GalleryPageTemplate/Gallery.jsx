@@ -32,11 +32,11 @@ const displayInfo = (artist, text) => (
     <p className='is-size-3'>{text}</p>
   </div>
 )
-const Gallery = ({ data }) => {
+const Gallery = ({ gridItems }) => {
   const [hoverRef, isHovered] = useHover()
   return (
     <div className='container'>
-      {data.map(({ image, artist, text }, keys) => (
+      {gridItems.map(({ image, artist, text }, keys) => (
         <div key={keys} ref={hoverRef}>
           <figure className='image is-128x128 is-round'>
             <img src={image} />
@@ -49,7 +49,7 @@ const Gallery = ({ data }) => {
 }
 
 Gallery.propTypes = {
-  data: PropTypes.arrayOf(
+  gridItems: PropTypes.arrayOf(
     PropTypes.shape({
       image: PropTypes.string,
       artist: PropTypes.string,

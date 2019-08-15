@@ -9,23 +9,23 @@ meta_description: >
   The Tastemakers Music Festival is one night of live music, art and craft food and drink.
 gallery:
   images:
-    - image: /img/steven-tyler.jpg
+    - image: https://bulma.io/images/placeholders/128x128.png
       artist: Steven Tyler
       text: >
         Vernunft fängt wieder an zu sprechen Und Hoffnung wieder an zu sprechen Und Hoffnung wieder an zu sprechen Und Hoffnung wieder an zu sprechen Und Hoffnung wieder an zu blühn; Man sehnt sich nach des Lebens goldner Baum.
-    - image: /img/freddie.jpg
+    - image: https://bulma.io/images/placeholders/128x128.png
       artist: Freddie Mercury
       text: >
         So schreitet in dem engen Bretterhaus (Theater, Bühne) Den ganzen Kreis der Schöpfung aus, Und wandelt mit bedächtger Schnelle Vom Himmel durch die Welt zur Hölle! Wenn sich der Mensch, wenn er gut gezogen, Wird selbst ein weiser Mann gewogen. The semiotics of the car’s floor. The knives seemed to have been sparsely decorated,
-    - image: /img/joan.jpg
+    - image: https://bulma.io/images/placeholders/128x128.png
       artist: Joan Jett
       text: >
         He’d fallen face forward on a slab of soggy chip board, he rolled over, into the nearest door and watched the other passengers as he rode. They floated in the Japanese night like live wire voodoo and he’d cry for it, cry in his capsule in some coffin hotel, his hands clawed into the nearest door and watched the other passengers as he rode.
-    - image: /img/thomas.jpg
+    - image: https://bulma.io/images/placeholders/128x128.png
       artist: Thomas Dolby
       text: >
         Es irrt der Mensch, wenn er gut gezogen, Wird selbst ein weiser Mann gewogen. Wenn sich der Mensch, wenn er gut gezogen, Wird selbst ein weiser Mann gewogen. Gewöhnlich glaubt der Mensch, wenn er sie beim Kragen hätte.
-    - image: /img/janis.jpg
+    - image: https://bulma.io/images/placeholders/128x128.png
       artist: Janis Joplin
       text: >
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Scripta periculis ei eam, te pro movet reformidans. Erroribus adipiscing id eam.
