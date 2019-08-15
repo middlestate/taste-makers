@@ -38,8 +38,8 @@ const Gallery = ({ gridItems }) => {
     <div className='container'>
       {gridItems.map(({ image, artist, text }, keys) => (
         <div key={keys} ref={hoverRef}>
-          <figure className='image is-128x128 is-round'>
-            <img src={image} />
+          <figure className='image is-128x128'>
+            <img className='is-rounded' src={image} />
           </figure>
           {isHovered ? displayInfo(artist, text) : ''}
         </div>
