@@ -1,4 +1,5 @@
 ---
+templateKey: gallery-page
 title: Gallery
 heading: WE BELIEVE IN MUSIC
 subheading: >
@@ -60,4 +61,3 @@ meta_description: >
   The Tastemakers Music Festival is one night of live music, art and craft food
   and drink.
 ---
-
