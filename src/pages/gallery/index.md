@@ -9,7 +9,7 @@ subheading: >
 gallery:
   images:
     - artist: Steven Tyler
-      image: /img/tastemakers-primary-01.svg
+      image: /img/steven-tyler.jpg
       text: >
         Vernunft fängt wieder an zu sprechen Und Hoffnung wieder an zu sprechen
         Und Hoffnung wieder an zu sprechen Und Hoffnung wieder an zu sprechen
