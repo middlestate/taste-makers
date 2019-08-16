@@ -16,11 +16,11 @@ const HomePagePreview = ({ entry, getAsset }) => {
       subheading={entry.getIn(['data', 'subheading'])}
       event={{
         date: entry.getIn(['data', 'event', 'date']),
-        text: entry.getIn(['data', 'text', 'text']),
+        text: entry.getIn(['data', 'event', 'text']),
       }}
       raising_money={{
         image: entry.getIn(['data', 'raising_money', 'image']),
-        heading: entry.getIn(['data', 'heading', 'text']),
+        heading: entry.getIn(['data', 'raising_money', 'text']),
         text: entry.getIn(['data', 'raising_money', 'text']),
       }}
       foundation={{
