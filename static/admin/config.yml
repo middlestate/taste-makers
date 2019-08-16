@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   # test-repo
   # git-gateway
-  branch: dev-paul
+  branch: master
 
 publish_mode: editorial_workflow
 media_folder: static/img
