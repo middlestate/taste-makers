@@ -6,7 +6,7 @@ heading_logo: /img/tastemakers-yellow-otl-01.svg
 heading: MUSIC - ART - YOUTH
 subheading: Annual live music festival in support of the SNV Foundation
 event:
-  date: OCTOBER 19
+  date: OCTOBER 99
   text: 4 TO 10 PM AT THE LUMBERYARD
 raising_money:
   heading: RAISING MONEY THE ONLY WAY WE KNOW HOW
