@@ -10,6 +10,7 @@ const GalleryPagePreview = ({ entry, getAsset }) => {
     <GalleryPageTemplate
       title={entry.getIn(['data', 'title'])}
       heading={entry.getIn(['data', 'heading'])}
+      subheading={entry.getIn(['data', 'subheading'])}
       gallery={{ images }}
       craft={{
         image: entry.getIn(['data', 'craft', 'image']),

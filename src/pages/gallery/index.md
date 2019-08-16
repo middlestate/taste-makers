@@ -1,5 +1,5 @@
 ---
-templateKey: gallery-page
+templateKey: 'gallery-page'
 title: Gallery
 heading: WE BELIEVE IN MUSIC
 subheading: >
@@ -57,7 +57,7 @@ craft:
     plenty to see and hear on the stage, our local food and beer crafters will
     give you plenty to taste and smell.
 meta_title: Tastemakers Gallery
-meta_description: >
+meta_description: >-
   The Tastemakers Music Festival is one night of live music, art and craft food
   and drink.
 ---
