@@ -3,7 +3,7 @@ templateKey: home-page
 title: Tastemakers
 title_hero: /img/Tastemakers2018-CatalinoAlvarezJr-014.png
 heading_logo: /img/tastemakers-yellow-otl-01.svg
-heading: MUSIC + ART + YOUTH
+heading: MUSIC - ART - YOUTH
 subheading: Annual live music festival in support of the SNV Foundation
 event:
   date: OCTOBER 19
