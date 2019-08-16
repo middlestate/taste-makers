@@ -33,7 +33,6 @@ export const pageQuery = graphql`
   query GalleryPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       frontmatter {
-        templateKey
         title
         heading
         subheading
