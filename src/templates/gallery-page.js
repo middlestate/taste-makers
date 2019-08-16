@@ -29,7 +29,7 @@ GalleryPage.propTypes = {
   }),
 }
 
-export const pageQuery = graphql`
+export const galleryQuery = graphql`
   query GalleryPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       frontmatter {
