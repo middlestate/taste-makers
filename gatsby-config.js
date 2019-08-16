@@ -57,21 +57,22 @@ module.exports = {
     {
       resolve: 'gatsby-transformer-remark',
       options: {
-        plugins: [{
-          resolve: 'gatsby-remark-relative-images',
-          options: {
-            name: 'uploads',
+        plugins: [
+          {
+            resolve: 'gatsby-remark-relative-images',
+            options: {
+              name: 'uploads',
+            },
           },
-        },
-        {
-          resolve: 'gatsby-remark-images',
-          options: {
-            // It's important to specify the maxWidth (in pixels) of
-            // the content container as this plugin uses this as the
-            // base for generating different widths of each image.
-            maxWidth: 2048,
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              // It's important to specify the maxWidth (in pixels) of
+              // the content container as this plugin uses this as the
+              // base for generating different widths of each image.
+              maxWidth: 2048,
+            },
           },
-        },
         ],
       },
     },
@@ -106,16 +107,17 @@ module.exports = {
         background_color: config.backgroundColor,
         theme_color: config.themeColor,
         display: 'standalone',
-        icons: [{
-          src: `/icons/icon-192x192.png`,
-          sizes: `192x192`,
-          type: `image/png`,
-        },
-        {
-          src: `/icons/icon-512x512.png`,
-          sizes: `512x512`,
-          type: `image/png`,
-        },
+        icons: [
+          {
+            src: `/icons/icon-192x192.png`,
+            sizes: `192x192`,
+            type: `image/png`,
+          },
+          {
+            src: `/icons/icon-512x512.png`,
+            sizes: `512x512`,
+            type: `image/png`,
+          },
         ],
       },
     },
@@ -145,25 +147,28 @@ module.exports = {
                   }
                 }
               `,
-        feeds: [{
-          serialize (ctx) {
-            const rssMetadata = ctx.query.site.siteMetadata.rssMetadata
-            return ctx.query.allMarkdownRemark.edges
-              .filter(
-                edge => edge.node.frontmatter.templateKey === 'product-page'
-              )
-              .map(edge => ({
-                categories: edge.node.frontmatter.tags,
-                title: edge.node.frontmatter.title,
-                description: edge.node.excerpt,
-                url: rssMetadata.site_url + edge.node.fields.slug,
-                guid: rssMetadata.site_url + edge.node.fields.slug,
-                custom_elements: [{
-                  'content:encoded': edge.node.html,
-                }],
-              }))
-          },
-          query: `
+        feeds: [
+          {
+            serialize (ctx) {
+              const rssMetadata = ctx.query.site.siteMetadata.rssMetadata
+              return ctx.query.allMarkdownRemark.edges
+                .filter(
+                  edge => edge.node.frontmatter.templateKey === 'product-page'
+                )
+                .map(edge => ({
+                  categories: edge.node.frontmatter.tags,
+                  title: edge.node.frontmatter.title,
+                  description: edge.node.excerpt,
+                  url: rssMetadata.site_url + edge.node.fields.slug,
+                  guid: rssMetadata.site_url + edge.node.fields.slug,
+                  custom_elements: [
+                    {
+                      'content:encoded': edge.node.html,
+                    },
+                  ],
+                }))
+            },
+            query: `
                     {
                       allMarkdownRemark(
                         limit: 1000,
@@ -184,8 +189,9 @@ module.exports = {
                       }
                     }
                   `,
-          output: config.siteRss,
-        }],
+            output: config.siteRss,
+          },
+        ],
       },
     },
     {
@@ -198,7 +204,7 @@ module.exports = {
           // For any node of type MarkdownRemark, list how to resolve the fields` values
           MarkdownRemark: {
             title: node => node.frontmatter.title,
-            // tags: node => node.frontmatter.tags,
+            templateKey: node => node.frontmatter.templateKey,
             slug: node => node.fields.slug,
           },
         },
