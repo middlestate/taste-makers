@@ -33,7 +33,7 @@ collections:
         label: "Gallery Page"
         name: gallery
         fields:
-          - {label: "Template Key", name: templatKey, widget: hidden, default: "gallery-page"}
+          - {label: "Template Key", name: templateKey, widget: hidden, default: "gallery-page"}
           - {label: Title, name: title, widget: string}
           - {label: Heading, name: heading, widget: string}
           - {label: Subheading, name: subheading, widget: text}

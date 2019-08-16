@@ -16,7 +16,7 @@ const GalleryPage = ({ data }) => {
         craft={frontmatter.craft}
         meta_title={frontmatter.meta_title}
         meta_description={frontmatter.meta_description}
-      />{' '}
+      />
     </Layout>
   )
 }
