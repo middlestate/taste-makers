@@ -6,7 +6,7 @@ subheading: >
   The Tastemakers Music Festival is one night of live music, art and craft food
   and drink. It’s the convergence of our area’s creative community to celebrate
   and raise money for the SNV Foundation.
-gallery_list:
+gallery:
   images:
     - artist: Steven Tyler
       image: /img/steven-tyler.jpg

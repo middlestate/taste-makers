@@ -12,7 +12,7 @@ const GalleryPage = ({ data }) => {
         title={frontmatter.title}
         heading={frontmatter.heading}
         subheading={frontmatter.subheading}
-        gallery={frontmatter.gallery_list}
+        gallery={frontmatter.gallery}
         craft={frontmatter.craft}
         meta_title={frontmatter.meta_title}
         meta_description={frontmatter.meta_description}
@@ -38,7 +38,7 @@ export const galleryQuery = graphql`
         title
         heading
         subheading
-        gallery_list {
+        gallery {
           images {
             image
             artist
