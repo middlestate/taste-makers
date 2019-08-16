@@ -153,7 +153,7 @@ module.exports = {
               const rssMetadata = ctx.query.site.siteMetadata.rssMetadata
               return ctx.query.allMarkdownRemark.edges
                 .filter(
-                  edge => edge.node.frontmatter.templateKey === 'product-page'
+                  edge => edge.node.frontmatter.templateKey === 'home-page'
                 )
                 .map(edge => ({
                   categories: edge.node.frontmatter.tags,
@@ -172,7 +172,7 @@ module.exports = {
                     {
                       allMarkdownRemark(
                         limit: 1000,
-                        sort: { order: DESC, fields: [frontmatter___title] },
+                        sort: { order: DESC, fields: [frontmatter___templateKey] },
                       ) {
                         edges {
                           node {
@@ -198,7 +198,7 @@ module.exports = {
       resolve: `@gatsby-contrib/gatsby-plugin-elasticlunr-search`,
       options: {
         // Fields to index
-        fields: [`title`], //, `tags`],
+        fields: [`title`, `templateKey`], //, `tags`],
         // How to resolve each field`s value for a supported node type
         resolvers: {
           // For any node of type MarkdownRemark, list how to resolve the fields` values
