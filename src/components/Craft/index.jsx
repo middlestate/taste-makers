@@ -7,7 +7,7 @@ const Craft = ({
   text,
 }) => (
   <section className='is-light-blue-er is-paddingless is-marginless' style={{ position: 'relative' }}>
-    <div className='is-light-blue-er is-hidden-mobile' style={{ height: 2380, width: 5266, border: 'solid transparent 5px', borderTopLeftRadius: '50%', borderTopRightRadius: '50%', transform: 'translate(-1800px, -100px)', overflow: 'hidden', zIndex: 10 }}>
+    <div className='is-light-blue-er is-hidden-mobile' style={{ height: 600, width: 3800, border: 'solid transparent 5px', borderTopLeftRadius: '60%', borderTopRightRadius: '60%', transform: 'translate(-1300px, -100px)', overflow: 'hidden', zIndex: 10 }}>
       <div ><p> </p></div>
     </div>
     <div className='overlay' style={{ backgroundColor: 'hsla(196, 86%, 60%, 1)', opacity: 1 }}>
