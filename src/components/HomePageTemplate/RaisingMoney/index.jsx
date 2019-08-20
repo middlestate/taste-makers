@@ -8,7 +8,7 @@ const RaisingMoney = ({
   <section
     className='section is-tm-yellow has-text-white'
     style={{ padding: 10 }}>
-    <div className='columns is-mobile is-centered'>
+    <div className='columns is-mobile is-centered' style={{ paddingTop: '5%', paddingBottom: '5%' }}>
       <div className='column is-10 is-offset-1'>
         <div className='tile is-ancestor'>
           <div className='tile is-6 is-parent'>

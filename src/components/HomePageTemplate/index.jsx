@@ -56,7 +56,7 @@ const HomePageTemplate = ({
                 style={{
                   width: '50%',
                   minWidth: 250,
-                  height: 135,
+                  height: 75,
                   border: 1,
                   borderColor: '#707070',
                   borderRadius: '65px 65px 65px 65px',

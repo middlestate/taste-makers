@@ -6,9 +6,9 @@ const BottomHero = ({
   heading,
 }) => (
   <section className='section is-marginless is-paddingless'>
-    <div className='hero is-fullheight' style={{ backgroundImage: `url(${image})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center center' }}>
+    <div className='hero is-fullheight' style={{ backgroundImage: `url(${image})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center center', boxShadow: 'inset 0 0 0 1000px rgba(255,255,255,.3)' }}>
       <div className='hero-body'>
-        <h1 className='is-size-3 has-text-centered has-text-white'>{heading}</h1>
+        <h1 className='is-size-3 has-text-centered has-text-white' style={{ width: '-webkit-fill-available' }}>{heading}</h1>
       </div>
     </div>
   </section>
